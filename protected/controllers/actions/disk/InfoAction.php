@@ -10,9 +10,9 @@
 class InfoAction extends CAction
 {
 
-    public function run()
+    public function run($producer, $name)
     {
-        echo 123127;
+        echo $producer;
         /*$producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
         if (!$producer) throw new CHttpException(404);
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
