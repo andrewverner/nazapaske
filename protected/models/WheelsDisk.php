@@ -368,7 +368,8 @@ class WheelsDisk extends CActiveRecord
                 ':name' => $this->name
             ])
             ->queryRow();
-        return ($row['min'] == $row['max']) ? $row['min'] : "{$row['min']} - {$row['max']}";
+        var_dump($row);
+        //return ($row['min'] == $row['max']) ? $row['min'] : "{$row['min']} - {$row['max']}";
     }
 
 }
