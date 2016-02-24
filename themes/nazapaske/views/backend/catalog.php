@@ -25,10 +25,12 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="update">
                 <div>Диски</div>
-                <input type="file" name="disks" />
+                <form action="<?php Yii::app()->createUrl('backend/upload/disk'); ?>" method="post" enctype="multipart/form-data">
+                    <input type="file" name="disks" />
+                </form>
                 <br /><br />
                 <div>Шины</div>
-                <input type="file" name="disks" />
+                <input type="file" name="tires" />
             </div>
             <div role="tabpanel" class="tab-pane fade" id="files">
                 С файлами, думаю будет проще заливать их через ФТП
