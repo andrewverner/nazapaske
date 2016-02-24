@@ -4,13 +4,13 @@
     $bread = ($model->producer == 2) ? array(
         CHtml::link('Главная','/'),
         CHtml::link('Диски',Yii::app()->createUrl('disk')),
-        CHtml::link($model->producer_name,Yii::app()->createUrl("disk/brand/$model->producer_name_alias")),
+        CHtml::link($model->producer_name,Yii::app()->createUrl("disk/producer/$model->producer")),
         //CHtml::link(WheelsDisk::tModel($model->model),Yii::app()->createUrl("disk/model/$model->model")),
         CHtml::link($model->name,Yii::app()->createUrl("disk/info/$model->producer_name_alias/$model->name_alias")),
     ) : array(
         CHtml::link('Главная','/'),
         CHtml::link('Диски',Yii::app()->createUrl('disk')),
-        CHtml::link($model->producer_name,Yii::app()->createUrl("disk/brand/$model->producer_name_alias")),
+        CHtml::link($model->producer_name,Yii::app()->createUrl("disk/producer/$model->producer")),
         CHtml::link($model->name,Yii::app()->createUrl("disk/info/$model->producer_name_alias/$model->name_alias")),
     );
         echo implode('|',$bread);
@@ -42,7 +42,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="plogo">
-                <a href="<?php echo Yii::app()->createUrl("disk/brand/$model->producer_name_alias"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer_model->logo; ?>" /></a>
+                <a href="<?php echo Yii::app()->createUrl("disk/producer/$model->producer"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer_model->logo; ?>" /></a>
             </div>
             <div class="part-title creditgoods"><?php echo $model->name; ?></div>
             <div class="info">
