@@ -11,7 +11,7 @@ class UploadAction extends CAction
 
     public function run($type)
     {
-        echo $type;
+        var_dump($_FILES);
     }
 
 }
