@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class DetailsAction extends CAction
+class InfoAction extends CAction
 {
 
     public function run()
