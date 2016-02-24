@@ -25,7 +25,7 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="update">
                 <div>Диски</div>
-                <form action="<?php Yii::app()->createUrl('backend/upload/disk'); ?>" method="post" enctype="multipart/form-data">
+                <form action="<?php echo Yii::app()->createUrl('backend/upload/disk'); ?>" method="post" enctype="multipart/form-data">
                     <input type="file" name="disks" />
                     <input type="submit" value="Обновить" />
                 </form>
