@@ -12,7 +12,7 @@ class DetailsAction extends CAction
 
     public function run()
     {
-        echo 123123;
+        echo 123127;
         /*$producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
         if (!$producer) throw new CHttpException(404);
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
