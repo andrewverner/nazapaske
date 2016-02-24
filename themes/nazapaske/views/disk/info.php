@@ -23,6 +23,42 @@
         <?php $this->renderPartial('//layouts/vk'); ?>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="part-title creditgoods"><?php echo $model->name; ?></div>
+            <div class="info">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Ширина</td>
+                        <td><?php echo $model->interval('width'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр</td>
+                        <td><?php echo $model->interval('diameter'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Сверловка</td>
+                        <td><?php echo $model->interval('mounting_holes'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>PCD</td>
+                        <td><?php echo $model->interval('mounting_holes_diameter'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Вылет</td>
+                        <td><?php echo $model->interval('outreach'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>ДЦО</td>
+                        <td><?php echo $model->interval('central_hole_diameter'); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Цвет</td>
+                        <td><?php echo implode(', ',$model->colors); ?></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 models-reviews">
 
             <ul class="nav nav-tabs" role="tablist">
