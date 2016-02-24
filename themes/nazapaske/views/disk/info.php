@@ -16,3 +16,87 @@
         echo implode('|',$bread);
     ?>
 </div>
+<div class="row item-card">
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <?php $this->renderPartial('//disk/producers'); ?>
+        <br /><br />
+        <?php $this->renderPartial('//layouts/vk'); ?>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 models-reviews">
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#models" aria-controls="models" role="tab" data-toggle="tab">Модели</a></li>
+                <!--li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Отзывы</a></li-->
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="models">
+                    <table class="table table-hover model-list">
+                        <thead>
+                        <tr>
+                            <td></td>
+                            <td>Размер</td>
+                            <td>PCD</td>
+                            <td>ET</td>
+                            <td>ДЦО</td>
+                            <td>Цвет</td>
+                            <td>Цена</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="reviews">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-success" role="alert">
+    Товар добавлен в корзину
+</div>
+
+<script src="/lightbox/js/lightbox.min.js"></script>
+<link href="/lightbox/css/lightbox.css" rel="stylesheet" />
+<script>
+    $(document).ready(function(){
+        $(".glyphicon-minus").click(function(){
+            var amount = parseInt($(this).next("input[type=text]").val());
+            if (amount > 1) $(this).next("input[type=text]").val(amount-1);
+        });
+
+        $(".glyphicon-plus").click(function(){
+            var amount = parseInt($(this).prev("input[type=text]").val());
+            if (amount > 0) $(this).prev("input[type=text]").val(amount+1);
+        });
+
+        $(".cart-btn").click(function(){
+            $.ajax({
+                url: '<?php echo Yii::app()->createUrl('cart/add'); ?>',
+                type: 'post',
+                data: {
+                    id: $(this).data("id"),
+                    type: $(this).data("type"),
+                    count: $(this).parent(".to-cart-btn-cell").prev(".counter-cell").children(".counter").children("input").val()
+                },
+                success: function(){
+                    $.ajax({
+                        url: '<?php echo Yii::app()->createUrl('/cart/mini'); ?>',
+                        success: function(data){
+                            var json = JSON.parse(data);
+                            setCart(json.count,json.price);
+                        }
+                    });
+                    $(".alert").fadeIn(250).delay(3000).fadeOut(250);
+                }
+            });
+        });
+    });
+</script>
