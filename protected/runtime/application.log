@@ -1,0 +1,878 @@
+2016/02/24 09:06:05 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('77995')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/77995
+---
+2016/02/24 09:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('122327')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/122327/0/17/5/114.3/0
+---
+2016/02/24 09:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('117567')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/117567/6/15/4/98/0
+---
+2016/02/24 09:08:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "contacts".' in /var/www/andrewverner/data/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('contacts')
+#1 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/contacts
+---
+2016/02/24 09:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('77362')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/77362/0/15/5/0/0
+---
+2016/02/24 09:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('122652')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/122652/0/18/5/114.3/0
+---
+2016/02/24 09:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('2701')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/2701
+---
+2016/02/24 09:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('7360')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/7360
+---
+2016/02/24 09:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('7367')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/7367
+---
+2016/02/24 09:12:15 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('124290')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/124290/6.5/16/5/114.3/45
+---
+2016/02/24 09:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('120547')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/120547/0/17/5/114.3/45
+---
+2016/02/24 09:17:08 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('118708')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/118708/6.5/15/4/98/0
+---
+2016/02/24 09:18:13 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('78907')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/78907/8/18/5/120/0
+---
+2016/02/24 09:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('119496')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/119496/7/18/5/114.3/0
+---
+2016/02/24 09:25:54 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('117737')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/117737/0/16/5/112/0
+---
+2016/02/24 09:26:15 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('121622')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/121622/0/15/4/114.3/0
+---
+2016/02/24 09:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('64860')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/64860/0/15/4/114.3/0
+---
+2016/02/24 09:35:40 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3449')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3449
+---
+2016/02/24 09:37:28 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('123200')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/123200/6.5/16/5/108/0
+---
+2016/02/24 09:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('79058')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/79058/7.5/18/5/114.3/42
+---
+2016/02/24 09:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('122079')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/122079/0/16/5/0/0
+---
+2016/02/24 09:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('5065')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/5065?producer=23
+---
+2016/02/24 09:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('2644')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/2644?producer=11
+---
+2016/02/24 09:43:33 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3763')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3763?producer=17
+---
+2016/02/24 09:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('4015')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/4015?producer=18
+---
+2016/02/24 09:43:37 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3517')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3517
+---
+2016/02/24 09:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('4503')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/4503?producer=19
+---
+2016/02/24 09:43:41 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3070')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3070
+---
+2016/02/24 09:43:44 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3034')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3034
+---
+2016/02/24 09:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('7361')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/7361/205/15/65/2/0
+---
+2016/02/24 09:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('116792')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/116792/6.5/16/5/114.3/50
+---
+2016/02/24 09:50:34 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('60728')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/60728/0/15/4/114.3/0
+---
+2016/02/24 09:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('116795')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/116795/6/15/4/98/0
+---
+2016/02/24 09:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('63361')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/63361/0/15/4/114.3/0
+---
+2016/02/24 09:55:58 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('67514')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/67514
+---
+2016/02/24 09:58:32 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('120316')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/120316/0/16/5/108/0
+---
+2016/02/24 10:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('130930')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/130930/5.5/14/4/100/0
+---
+2016/02/24 10:03:21 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('79105')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/79105/6.5/15/5/108/0
+---
+2016/02/24 10:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3958')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3958/0/20/0/3/2
+---
+2016/02/24 10:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('63508')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/63508/0/15/4/114.3/0
+---
+2016/02/24 10:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('59265')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/59265/0/15/4/0/0
+---
+2016/02/24 10:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('79056')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/79056/0/16/4/100/0
+---
+2016/02/24 10:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('61603')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/61603
+---
+2016/02/24 10:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3900')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3900/215/16/55/0/0
+---
+2016/02/24 10:26:03 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('69098')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/69098
+---
+2016/02/24 10:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('61731')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/61731/0/16/4/100/0
+---
+2016/02/24 10:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('5271')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/5271
+---
+2016/02/24 10:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('3739')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/3739/0/16/0/3/2
+---
+2016/02/24 10:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('1932')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/1932
+---
+2016/02/24 10:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/tire/DetailsAction.php:46
+Stack trace:
+#0 [internal function]: DetailsAction->run('2714')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tire/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/tire/details/2714/205/16/55/0/0
+---
+2016/02/24 10:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('119173')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/119173/0/16/5/0/0
+---
+2016/02/24 10:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('117904')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/117904/0/16/4/100/0
+---
+2016/02/24 10:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('121728')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/121728/7.5/17/5/112/45
+---
+2016/02/24 10:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('121085')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/121085/7.5/17/5/0/0
+---
+2016/02/24 10:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('6799')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details/id...')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/id/6799?producer=2&model=RN
+---
+2016/02/24 10:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('59535')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/59535
+---
+2016/02/24 10:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('63431')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/63431/0/20/6/139.7/0
+---
+2016/02/24 10:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('122478')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/122478
+---
+2016/02/24 10:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/andrewverner/data/www/w.andrewverner.ru/protected/controllers/actions/disk/DetailsAction.php:48
+Stack trace:
+#0 [internal function]: DetailsAction->run('79052')
+#1 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DetailsAction), Array)
+#2 /var/www/andrewverner/data/www/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(DetailsAction), Object(ReflectionMethod), Array)
+#3 /var/www/andrewverner/data/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/andrewverner/data/www/framework/web/CController.php(286): CController->runAction(Object(DetailsAction))
+#5 /var/www/andrewverner/data/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(DetailsAction), Array)
+#6 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(282): CController->run('details')
+#7 /var/www/andrewverner/data/www/framework/web/CWebApplication.php(141): CWebApplication->runController('disk/details')
+#8 /var/www/andrewverner/data/www/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/andrewverner/data/www/w.andrewverner.ru/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/disk/details/79052
+---
