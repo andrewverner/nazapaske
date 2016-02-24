@@ -42,7 +42,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="plogo">
-                <a href="<?php echo Yii::app()->createUrl("disk/brand/{$model->producer_model->name}"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer_model->logo; ?>" /></a>
+                <a href="<?php echo Yii::app()->createUrl("disk/brand/$model->producer_name_alias"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer_model->logo; ?>" /></a>
             </div>
             <div class="part-title creditgoods"><?php echo $model->name; ?></div>
             <div class="info">
@@ -106,7 +106,37 @@
                         </tr>
                         </thead>
                         <tbody>
-
+                        <?php if ($model->list) : ?>
+                            <?php foreach ($model->list as $disk) { ?>
+                                <tr>
+                                    <td>
+                                        <div class="img-rounded img-thumbnail">
+                                            <?php echo CHtml::link(CHtml::image((strstr($disk->img,'http://')) ? $disk->img : "http://nazapaske.ru/".($disk->img ? $disk->img : '/images/no-image.png')),(strstr($disk->img,'http://')) ? $disk->img : "http://nazapaske.ru/".($disk->img ? $disk->img : '/images/no-image.png'),array("data-lightbox"=>"disk-$disk->diskid")); ?>
+                                        </div>
+                                    </td>
+                                    <td><?php echo $disk->width; ?>*<?php echo $disk->diameter; ?></td>
+                                    <td><?php echo $disk->mounting_holes; ?>*<?php echo $disk->mounting_holes_diameter; ?></td>
+                                    <td><?php echo $disk->outreach; ?></td>
+                                    <td><?php echo $disk->central_hole_diameter; ?></td>
+                                    <td><?php echo $disk->color; ?></td>
+                                    <td class="price-cell creditprice"><?php echo $disk->price(); ?> <span class="glyphicon glyphicon-ruble"></span></td>
+                                    <td class="counter-cell">
+                                        <div class="input-group counter">
+                                            <div class="input-group-addon glyphicon glyphicon-minus"></div>
+                                            <input type="text" class="form-control" value="4" />
+                                            <div class="input-group-addon glyphicon glyphicon-plus"></div>
+                                        </div>
+                                    </td>
+                                    <td class="to-cart-btn-cell">
+                                        <div class="input-group cart-btn" data-id="<?php echo $disk->diskid; ?>" data-type="disk">
+                                            <div class="input-group-addon glyph-to-cart">&nbsp;</div>
+                                            <input type="submit" class="form-control" value="Купить" />
+                                        </div>
+                                    </td>
+                                    <td><a href="javascript:void(0);" class="gocredit btn btn-danger">В кредит</a></td>
+                                </tr>
+                            <?php } ?>
+                        <?php endif; ?>
                         </tbody>
                     </table>
                 </div>

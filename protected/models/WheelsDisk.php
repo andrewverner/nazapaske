@@ -371,4 +371,15 @@ class WheelsDisk extends CActiveRecord
         return ($row['min'] == $row['max']) ? $row['min'] : "{$row['min']} - {$row['max']}";
     }
 
+    public function getList()
+    {
+        $cr = new CDbCriteria;
+        $cr->condition = 'producer = :producer AND name = :name';
+        $cr->params = [
+            ':producer' => $this->producer,
+            ':name' => $this->name,
+        ];
+        return WheelsDisk::model()->findAll($cr);
+    }
+
 }
