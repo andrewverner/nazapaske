@@ -361,7 +361,7 @@ class WheelsDisk extends CActiveRecord
     public function interval($field)
     {
         $row = Yii::app()->db->createCommand()
-            ->select("max($field) as max, min($field) s min")
+            ->select("max($field) as max, min($field) as min")
             ->from('wheels_disk')
             ->where('producer=:producer AND name=:name', [
                 ':producer' => $this->producer,
