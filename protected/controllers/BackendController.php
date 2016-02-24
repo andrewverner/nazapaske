@@ -44,6 +44,8 @@ class BackendController extends Controller {
             'disk' => 'application.controllers.actions.backend.DiskAction',
             'tires' => 'application.controllers.actions.backend.TiresAction',
             'tire' => 'application.controllers.actions.backend.TireAction',
+
+            'upload' => 'application.controllers.actions.backend.UploadAction',
         ];
     }
 

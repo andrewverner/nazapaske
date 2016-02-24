@@ -92,6 +92,8 @@ return array(
 
                 'backend/order/<id:\d+>' => 'backend/order',
                 'backend/dropOrder/<id:\d+>' => 'backend/dropOrder',
+
+				'backend/upload/<type:\w+>' => 'backend/upload',
 			),
 		),
 
