@@ -12,9 +12,12 @@ class InfoAction extends CAction
 
     public function run($producer, $name)
     {
-        echo $producer;
-        /*$producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
+        $producer = str_replace('_',' ',$producer);
+        $name = str_replace('_',' ',$name);
+        $producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
         if (!$producer) throw new CHttpException(404);
+        echo $producer->id;
+        die();
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
         if ($model != null) {
             $details = new stdClass;
@@ -48,7 +51,7 @@ class InfoAction extends CAction
                 'list' => WheelsDisk::model()->findAll($cr)
             ));
         } else
-            throw new CHttpException(404);*/
+            throw new CHttpException(404);
     }
 
 }
