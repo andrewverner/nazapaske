@@ -32,34 +32,7 @@
                         <td>Производитель</td>
                         <td><?php echo $model->producer->name; ?></td>
                     </tr>
-                    <tr>
-                        <td>Ширина</td>
-                        <td><?php echo $model->interval('width'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>Диаметр</td>
-                        <td><?php echo $model->interval('diameter'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>Сверловка</td>
-                        <td><?php echo $model->interval('mounting_holes'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>PCD</td>
-                        <td><?php echo $model->interval('mounting_holes_diameter'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>Вылет</td>
-                        <td><?php echo $model->interval('outreach'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>ДЦО</td>
-                        <td><?php echo $model->interval('central_hole_diameter'); ?></td>
-                    </tr>
-                    <tr>
-                        <td>Цвет</td>
-                        <td><?php echo implode(', ',$model->colors); ?></td>
-                    </tr>
+
                 </table>
             </div>
         </div>
