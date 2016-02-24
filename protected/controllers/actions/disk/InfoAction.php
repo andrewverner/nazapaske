@@ -10,9 +10,9 @@
 class DetailsAction extends CAction
 {
 
-    public function run($producer, $name)
+    public function run()
     {
-        echo $producer;
+        echo 123123;
         /*$producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
         if (!$producer) throw new CHttpException(404);
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
