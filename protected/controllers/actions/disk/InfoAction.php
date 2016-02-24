@@ -12,7 +12,8 @@ class DetailsAction extends CAction
 
     public function run($producer, $name)
     {
-        $producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
+        echo $producer;
+        /*$producer = DiskProducer::model()->findByAttributes(['name' => $producer]);
         if (!$producer) throw new CHttpException(404);
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
         if ($model != null) {
@@ -47,7 +48,7 @@ class DetailsAction extends CAction
                 'list' => WheelsDisk::model()->findAll($cr)
             ));
         } else
-            throw new CHttpException(404);
+            throw new CHttpException(404);*/
     }
 
 }
