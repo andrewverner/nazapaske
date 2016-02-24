@@ -72,7 +72,7 @@ return array(
                 'disk/details/<id:\d+>/<width>/<diameter>/<mounting_holes>/<mounting_holes_diameter>/<outreach>' => 'disk/details',
                 'disk/producer/<id:\d+>' => 'disk/producer',
                 'disk/model/<id:\w+>' => 'disk/model',
-                //'disk/info' => 'disk/info',
+                'disk/info/<producer:\w+>/<name:\w+>' => 'disk/info',
                 'tire/details/<id:\d+>/<width:\w+>/<diameter:\w+>/<shape:\w+>/<season:\w+>/<studding:\w+>' => 'tire/details',
                 'tire/producer/<id:\d+>' => 'tire/producer',
                 'page/page/<alias:\w+>' => 'page/page',
