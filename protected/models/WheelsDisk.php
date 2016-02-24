@@ -229,6 +229,21 @@ class WheelsDisk extends CActiveRecord
         return DiskProducer::model()->findByPk($id)->getAttribute('name');
     }
 
+    public function getProducer_name()
+    {
+        return DiskProducer::model()->findByPk($this->producer)->getAttribute('name');
+    }
+
+    public function getProducer_name_alias()
+    {
+        return str_replace(' ','_',DiskProducer::model()->findByPk($this->producer)->getAttribute('name'));
+    }
+
+    public function getName_alias()
+    {
+        return str_replace(' ','_',$this->name);
+    }
+
     public function getInterval($field)
     {
         $row = Yii::app()->db->createCommand("SELECT min($field) as min, max($field) as max FROM wheels_disk WHERE name='$this->name'")->queryRow();

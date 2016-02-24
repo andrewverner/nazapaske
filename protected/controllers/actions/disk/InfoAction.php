@@ -18,7 +18,7 @@ class InfoAction extends CAction
         if (!$producer) throw new CHttpException(404);
         $model = WheelsDisk::model()->findByAttributes(['producer' => $producer->id, 'name' => $name]);
         if ($model != null) {
-            echo $model->name;
+            $this->controller->render('info',['model' => $model]);
         } else
             throw new CHttpException(404);
     }
