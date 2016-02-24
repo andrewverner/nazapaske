@@ -23,23 +23,7 @@
         <?php $this->renderPartial('//layouts/vk'); ?>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-rounded img-thumbnail">
-                <?php echo CHtml::link(CHtml::image((strstr($model->img,'http://')) ? $model->img : "http://nazapaske.ru/".$model->image()),(strstr($model->img,'http://')) ? $model->img : "http://nazapaske.ru/".$model->image(),array("data-lightbox"=>"disk")); ?>
-            </div>
-            <?php $images = $model->images(); ?>
-            <?php if ($images != null) { ?>
-                <div class="gallery">
-                    <?php foreach ($images as $image) { ?>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 gallery-row">
-                            <div class="img-rounded img-thumbnail">
-                                <?php echo CHtml::link(CHtml::image((strstr($image->img,'http://')) ? $image->img : "http://nazapaske.ru/$image->img"),(strstr($image->img,'http://')) ? $image->img : "http://nazapaske.ru/$image->img",array("data-lightbox"=>"disk")); ?>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-            <?php } ?>
-        </div>
+
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="plogo">
                 <a href="<?php echo Yii::app()->createUrl("disk/brand/$model->producer_name_alias"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer->logo; ?>" /></a>
