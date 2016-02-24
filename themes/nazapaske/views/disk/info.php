@@ -25,9 +25,6 @@
     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="plogo">
-                <a href="<?php echo Yii::app()->createUrl("disk/brand/$model->producer_name_alias"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer->logo; ?>" /></a>
-            </div>
             <div class="part-title creditgoods"><?php echo $model->name; ?></div>
             <div class="info">
                 <table class="table table-hover">
