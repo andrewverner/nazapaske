@@ -42,15 +42,14 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="plogo">
-                <?php var_dump($model->producer); die(); ?>
-                <a href="<?php echo Yii::app()->createUrl("disk/brand/{$model->producer->name}"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer->logo; ?>" /></a>
+                <a href="<?php echo Yii::app()->createUrl("disk/brand/{$model->producer_model->name}"); ?>"><img src="http://nazapaske.ru/images/logos/disks/<?php echo $model->producer_model->logo; ?>" /></a>
             </div>
             <div class="part-title creditgoods"><?php echo $model->name; ?></div>
             <div class="info">
                 <table class="table table-hover">
                     <tr>
                         <td>Производитель</td>
-                        <td><?php echo $model->producer->name; ?></td>
+                        <td><?php echo $model->producer_model->name; ?></td>
                     </tr>
                     <tr>
                         <td>Ширина</td>

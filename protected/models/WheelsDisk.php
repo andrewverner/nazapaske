@@ -353,7 +353,7 @@ class WheelsDisk extends CActiveRecord
         return ($model != null) ? $model->img : '/images/no-image.png';
     }
 
-    public function getProducer()
+    public function getProducer_model()
     {
         return DiskProducer::model()->findByPk($this->producer);
     }
