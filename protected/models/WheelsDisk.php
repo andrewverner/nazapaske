@@ -353,4 +353,22 @@ class WheelsDisk extends CActiveRecord
         return ($model != null) ? $model->img : '/images/no-image.png';
     }
 
+    public function getProducer()
+    {
+        return DiskProducer::model()->findByPk($this->producer);
+    }
+
+    public function interval($field)
+    {
+        $row = Yii::app()->db->createCommand()
+            ->select("max($field), min($field)")
+            ->from('wheels_disk')
+            ->where('producer=:producer AND name=:name', [
+                ':producer' => $this->producer,
+                ':name' => $this->name
+            ])
+            ->queryRow();
+        return ($row->min == $row->max) ? $row->min : "$row->min - $row->max";
+    }
+
 }
