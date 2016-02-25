@@ -26,7 +26,7 @@
             <div role="tabpanel" class="tab-pane fade" id="update">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Диски</h3>
+                        <h3 class="panel-title">Диски (МЕХАНИЗМ ОБНОВЛЕНИЯ ЕЩЁ НЕ ОТТЕСТИРОВАН!!!)</h3>
                     </div>
                     <div class="panel-body">
                         <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
@@ -38,7 +38,7 @@
                             <div class="panel-body">
                             Загружаемый прайс должен быть в формате CSV и иметь строго определённую структуру:<br />
                                 <ul>
-                                    <li>Название модели</li>
+                                    <li>Название модели (без наименования производителя, ничего лишнего, кроме сокращения. 4Ex: Uros, LM01, CI25)</li>
                                     <li>Артикул (если нет, то пустой столбец)</li>
                                     <li>Ширина</li>
                                     <li>Диаметр</li>
