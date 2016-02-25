@@ -102,7 +102,7 @@ class DiskProducer extends CActiveRecord
         return ($model != null) ? $model->id : null;
     }
 
-	public function getList()
+	static function getList()
 	{
 		$models = DiskProducer::model()->findAll();
 		$list = [];
