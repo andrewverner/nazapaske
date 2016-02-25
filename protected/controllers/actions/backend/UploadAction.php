@@ -11,10 +11,15 @@ class UploadAction extends CAction
 
     public function run($type)
     {
-        if (move_uploaded_file($_FILES['file']['tmp_name'],"/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/".time().".csv")) {
+        $time = time();
+        if (move_uploaded_file($_FILES['file']['tmp_name'],"/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv")) {
             switch ($type) {
                 case 'disk':
+                    $rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
+                    foreach ($rows as $row) {
+                        list($producer,$name,$article,$width,$diameter,$pcd,$pcd2,$et,$dco,$color,$count,$price) = explode(';',$row);
 
+                    }
                     break;
                 case 'tire':
 

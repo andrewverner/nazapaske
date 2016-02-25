@@ -193,7 +193,7 @@ NOKIAN;HAKKA GREEN 2;215;55;16;97V;летняя;легковая;;4;5 441р.");
             if (count(explode(';',$row)) > 5) {
                 list($name,$article,$width,$diameter,$pcd,$pcd2,$et,$dco,$color,$count,$price) = explode(';',$row);
                 $m = str_replace('Диск ENKEI ','',$name);
-                //$model = preg_replace('/[0-9\/]/','',substr($m,0,3));
+                $model = preg_replace('/[0-9\/]/','',substr($m,0,3));
                 $width = str_replace(',','.',$width);
                 $pcd2 = str_replace(',','.',$pcd2);
                 $dco = str_replace(',','.',$dco);

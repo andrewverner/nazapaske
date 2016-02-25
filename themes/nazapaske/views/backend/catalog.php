@@ -31,8 +31,10 @@
                     <div class="panel-body">
                         <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
                         <?php echo CHtml::fileField('file'); ?>
-                        <div>Что делаем с пересекающимися моделями?</div>
-                        <div><?php echo CHtml::radioButtonList('collision',false,[0 => 'Не трогаем', 1 => 'Обновляем']) ?></div>
+                        <?php echo CHtml::dropDownList('producer',false,DiskProducer::getList()) ?>
+                        <div><label><?php echo CHtml::checkBox('drop',false) ?> Удалить все модели производителя перед обновлением</label></div>
+                        <div>Что делаем с пересекающимися моделями? (если старые мобели не удаляются)</div>
+                        <div><?php echo CHtml::radioButtonList('collision',0,[0 => 'Не трогаем', 1 => 'Обновляем']) ?></div>
                         <div>Процент <?php echo CHtml::textField('percent',0); ?></div>
                         <?php echo CHtml::submitButton('Обновить'); ?>
                         <?php echo CHtml::endForm(); ?>
