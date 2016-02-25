@@ -30,6 +30,26 @@
                     </div>
                     <div class="panel-body">
                         <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
+
+                        <div class="alert alert-danger" role="alert">
+                            Загружаемый прайс должен быть в формате CSV и иметь строго определённую структуру:<br />
+                            <ul>
+                                <li>Название модели</li>
+                                <li>Артикул (если нет, то пустой столбец)</li>
+                                <li>Ширина</li>
+                                <li>Диаметр</li>
+                                <li>PCD</li>
+                                <li>PCD2</li>
+                                <li>ET (вылет)</li>
+                                <li>ДЦО</li>
+                                <li>Цвет</li>
+                                <li>Остаток</li>
+                                <li>Цена</li>
+                            </ul>
+                            При другом порядке столбцов обновление пройдёт с ошибками и придётся разворачивать дамп БД (если таковой был сделан заранее руками перед обновлением).<br />
+                            В случае, если обновляется каталог реплея или легеартиса, то сокращение модели авто должно быть в имени модели
+                        </div>
+
                         <?php echo CHtml::fileField('file'); ?>
                         <?php echo CHtml::dropDownList('producer',false,DiskProducer::getList()) ?>
                         <div><label><?php echo CHtml::checkBox('drop',false) ?> Удалить все модели производителя перед обновлением</label></div>
