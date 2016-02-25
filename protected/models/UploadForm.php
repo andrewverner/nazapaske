@@ -6,7 +6,7 @@
  * Date: 25-Feb-16
  * Time: 9:55 AM
  */
-class UploadForm extends \CActiveForm
+class UploadForm extends CFormModel
 {
 
     public $file;
