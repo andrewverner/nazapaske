@@ -19,11 +19,11 @@ class UploadAction extends CAction
                         echo 'drop';
                     }
                     else echo 'no drop';
-                    $rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
+                    /*$rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
                     foreach ($rows as $row) {
                         list($producer,$name,$article,$width,$diameter,$pcd,$pcd2,$et,$dco,$color,$count,$price) = explode(';',$row);
 
-                    }
+                    }*/
                     break;
                 case 'tire':
 
