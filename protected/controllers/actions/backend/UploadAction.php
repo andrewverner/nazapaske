@@ -24,6 +24,8 @@ class UploadAction extends CAction
                     break;
             }
         }
+        else
+            echo 'Arse';
     }
 
 }
