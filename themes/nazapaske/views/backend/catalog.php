@@ -27,6 +27,8 @@
                 <div>Диски</div>
                 <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
                 <?php echo CHtml::activeFileField($model, 'file'); ?>
+                Что делаем с пересекающимися моделями?
+                <?php echo CHtml::radioButtonList('collision',false,[0 => 'Не трогаем', 1 => 'Обновляем']) ?>
                 <?php echo CHtml::submitButton('Обновить'); ?>
                 <?php echo CHtml::endForm(); ?>
                 <br /><br />

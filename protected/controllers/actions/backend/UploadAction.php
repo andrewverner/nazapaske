@@ -11,9 +11,19 @@ class UploadAction extends CAction
 
     public function run($type)
     {
-        $model = new UploadForm();
-        $model->setAttributes($_POST['UploadForm']);
-        var_dump($model);
+        if (move_uploaded_file($_FILES['file']['name'],"/var/www/andrewverner/data/www/w.andrewverner.ru/prices/$type/".time().".csv")) {
+            switch ($type) {
+                case 'disk':
+
+                    break;
+                case 'tire':
+
+                    break;
+                default:
+                    throw new CHttpException(404);
+                    break;
+            }
+        }
     }
 
 }
