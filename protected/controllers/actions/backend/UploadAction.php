@@ -11,6 +11,7 @@ class UploadAction extends CAction
 
     public function run($type)
     {
+        var_dump($_FILES);
         if (move_uploaded_file($_FILES['file']['name'],"/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/".time().".csv")) {
             switch ($type) {
                 case 'disk':
