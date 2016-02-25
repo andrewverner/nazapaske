@@ -24,14 +24,21 @@
                 </ul>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="update">
-                <div>Диски</div>
-                <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
-                <?php echo CHtml::activeFileField($model, 'file'); ?>
-                <div>Что делаем с пересекающимися моделями?</div>
-                <?php echo CHtml::radioButtonList('collision',false,[0 => 'Не трогаем', 1 => 'Обновляем']) ?>
-                Процент <?php echo CHtml::textField('percent',0); ?>
-                <?php echo CHtml::submitButton('Обновить'); ?>
-                <?php echo CHtml::endForm(); ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Диски</h3>
+                    </div>
+                    <div class="panel-body">
+                        <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
+                        <?php echo CHtml::activeFileField($model, 'file'); ?>
+                        <div>Что делаем с пересекающимися моделями?</div>
+                        <div><?php echo CHtml::radioButtonList('collision',false,[0 => 'Не трогаем', 1 => 'Обновляем']) ?></div>
+                        <div>Процент <?php echo CHtml::textField('percent',0); ?></div>
+                        <?php echo CHtml::submitButton('Обновить'); ?>
+                        <?php echo CHtml::endForm(); ?>
+                    </div>
+                </div>
+
                 <br /><br />
                 <div>Шины</div>
                 <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/tire'),'post',array('enctype'=>'multipart/form-data')); ?>
