@@ -12,7 +12,7 @@ class CatalogAction extends CAction
     public function run()
     {
         if (Yii::app()->user->isGuest || !Yii::app()->user->isAdmin) $this->controller->redirect(Yii::app()->createUrl('backend')); else {
-            $this->controller->render('catalog');
+            $this->controller->render('catalog',['model' => new UploadForm()]);
         }
     }
 
