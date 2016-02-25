@@ -31,8 +31,8 @@
                     <div class="panel-body">
                         <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
 
-                        <div class="alert alert-danger" role="alert">
-                            Загружаемый прайс должен быть в формате CSV и иметь строго определённую структуру:<br />
+                        <div class="panel panel-danger">
+                        Загружаемый прайс должен быть в формате CSV и иметь строго определённую структуру:<br />
                             <ul>
                                 <li>Название модели</li>
                                 <li>Артикул (если нет, то пустой столбец)</li>
