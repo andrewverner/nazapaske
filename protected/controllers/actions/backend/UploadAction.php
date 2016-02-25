@@ -12,6 +12,7 @@ class UploadAction extends CAction
     public function run($type)
     {
         $model = new UploadForm();
+        $model->setAttributes($_POST['UploadForm']);
         var_dump($model);
     }
 
