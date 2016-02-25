@@ -30,7 +30,7 @@
                     </div>
                     <div class="panel-body">
                         <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/disk'),'post',array('enctype'=>'multipart/form-data')); ?>
-                        <?php echo CHtml::activeFileField($model, 'file'); ?>
+                        <?php echo CHtml::fileField('file'); ?>
                         <div>Что делаем с пересекающимися моделями?</div>
                         <div><?php echo CHtml::radioButtonList('collision',false,[0 => 'Не трогаем', 1 => 'Обновляем']) ?></div>
                         <div>Процент <?php echo CHtml::textField('percent',0); ?></div>
@@ -38,13 +38,6 @@
                         <?php echo CHtml::endForm(); ?>
                     </div>
                 </div>
-
-                <br /><br />
-                <div>Шины</div>
-                <?php echo CHtml::form(Yii::app()->createUrl('backend/upload/tire'),'post',array('enctype'=>'multipart/form-data')); ?>
-                <?php echo CHtml::activeFileField($model, 'file'); ?>
-                <?php echo CHtml::submitButton('Обновить'); ?>
-                <?php echo CHtml::endForm(); ?>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="files">
                 С файлами, думаю будет проще заливать их через ФТП
