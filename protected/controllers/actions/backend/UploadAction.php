@@ -13,6 +13,8 @@ class UploadAction extends CAction
     {
         $model = new UploadForm;
         $model->attributes = $_POST['UploadForm'];
+        var_dump($model);
+        die();
         $file = CUploadedFile::getInstance($model,'file');
         var_dump($file);
     }
