@@ -4074,7 +4074,7 @@ Yokohama;Yokohama W.drive WY01;215;75;16C;116/114R;Winter;Light;;4;6,344");
 
             if ($check == null) {
                 $export = ExportShiny::model()->findByAttributes(array(
-                    'model' => trim(str_replace($pn,'',$model));
+                    'model' => trim(str_replace($pn,'',$model))
                 ));
                 $img = ($export != null) ? "/$export->goods_img" : null;
 
