@@ -4054,6 +4054,7 @@ Yokohama;Yokohama W.drive WY01;215;75;16C;116/114R;Winter;Light;;4;6,344");
             $in = preg_replace('/[^0-9\/]/','',$in);
             $price = preg_replace('/[^0-9\/]/','',$price);
 
+            $pn = $producerName;
             $producerName = strtolower(trim($producerName));
             $model = strtolower(trim($model));
 
@@ -4073,7 +4074,7 @@ Yokohama;Yokohama W.drive WY01;215;75;16C;116/114R;Winter;Light;;4;6,344");
 
             if ($check == null) {
                 $export = ExportShiny::model()->findByAttributes(array(
-                    'model' => $model
+                    'model' => trim(str_replace($pn,'',$model));
                 ));
                 $img = ($export != null) ? "/$export->goods_img" : null;
 
