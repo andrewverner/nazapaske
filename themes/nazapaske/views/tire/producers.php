@@ -8,7 +8,7 @@
  * Time: 5:28 PM
  * To change this template use File | Settings | File Templates.
  */
-foreach (TireProducer::model()->findAll() as $producer) {
+foreach (TireProducer::model()->findAll(['order' => 'name ASC']) as $producer) {
 ?>
     <li>
         <a href="<?php echo Yii::app()->createUrl("tire/producer/$producer->id"); ?>"><?php echo mb_strtoupper($producer->name); ?></a>
