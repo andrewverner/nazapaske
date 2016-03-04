@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 model-name"><?php echo $model->name; ?></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price">от <?php echo $model->minimalPrice(); ?> <span class="glyphicon glyphicon-ruble"></span></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 details-link"><a href="<?php echo Yii::app()->createUrl("/disk/details/$model->diskid"); ?>" class="btn btn-primary btn-sm">Подробнее</a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 details-link"><a href="<?php echo Yii::app()->createUrl("/disk/info/{$model->brand->alias}/$model->alias"); ?>" class="btn btn-primary btn-sm">Подробнее</a></div>
                 </div>
             </div>
         </div>
