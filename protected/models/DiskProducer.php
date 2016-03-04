@@ -112,4 +112,9 @@ class DiskProducer extends CActiveRecord
 		return $list;
 	}
 
+	public function getAlias()
+	{
+		return str_replace(' ','_',$this->name);
+	}
+
 }

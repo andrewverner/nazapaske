@@ -244,6 +244,11 @@ class WheelsDisk extends CActiveRecord
         return str_replace(' ','_',$this->name);
     }
 
+    public function getAlias()
+    {
+        return str_replace(' ','_',$this->name);
+    }
+
     public function getInterval($field)
     {
         $row = Yii::app()->db->createCommand("SELECT min($field) as min, max($field) as max FROM wheels_disk WHERE name='$this->name'")->queryRow();
@@ -354,6 +359,11 @@ class WheelsDisk extends CActiveRecord
     }
 
     public function getProducer_model()
+    {
+        return DiskProducer::model()->findByPk($this->producer);
+    }
+
+    public function getBrand()
     {
         return DiskProducer::model()->findByPk($this->producer);
     }
