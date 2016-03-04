@@ -442,4 +442,15 @@ class UController extends Controller
         }
     }
 
+    public function actionTireNameFix()
+    {
+        $models = WheelsTire::model()->findAll();
+        foreach ($models as $model) {
+            $p = TireProducer::model()->findByPk($model->producer);
+            $model->saveAttributes([
+                'name' => str_replace(" $p->name ",' ',$model->name)
+            ]);
+        }
+    }
+
 }
