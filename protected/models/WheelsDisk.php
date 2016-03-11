@@ -251,7 +251,12 @@ class WheelsDisk extends CActiveRecord
 
     public function getInterval($field)
     {
-        $row = Yii::app()->db->createCommand("SELECT min($field) as min, max($field) as max FROM wheels_disk WHERE name='$this->name'")->queryRow();
+        //$row = Yii::app()->db->createCommand("SELECT min($field) as min, max($field) as max FROM wheels_disk WHERE name='$this->name'")->queryRow();
+        $row = Yii::app()->db->createCommand()
+            ->select("min($field) as min, max($field) as max")
+            ->from('wheels_disk')
+            ->where('name=:name', [':name' => $this->name])
+            ->queryRow();
         $res = new stdClass;
         $res->min = $row["min"];
         $res->max = $row["max"];
