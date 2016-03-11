@@ -453,4 +453,14 @@ class UController extends Controller
         }
     }
 
+    public function actionCSImgFix()
+    {
+        $models = WheelsDisk::model()->findAllByAttributes(['producer' => 18]);
+        foreach ($models as $model) {
+            $model->saveAttributes([
+                'img' => str_replace("crossstreet",'cross street',$model->img)
+            ]);
+        }
+    }
+
 }
