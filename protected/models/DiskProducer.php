@@ -114,7 +114,7 @@ class DiskProducer extends CActiveRecord
 
 	public function getAlias()
 	{
-		return str_replace(' ','_',$this->name);
+		return urlencode(str_replace(' ','_',$this->name));
 	}
 
 }
