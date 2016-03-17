@@ -85,7 +85,7 @@ class UploadAction extends CAction
 
                     $rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
                     foreach ($rows as $row) {
-                        list($producerName,$model,$width,$shape,$diameter,$in,$season,$type,$studding,$count,$price) = explode(';',$row);
+                        list($producerName,$model,$article,$width,$shape,$diameter,$in,$season,$type,$studding,$count,$price) = explode(';',$row);
                         $producer = TireProducer::model()->findByAttributes(['name' => strtolower($producerName)]);
                         if (!$producer) {
                             $producer = new TireProducer();
@@ -97,7 +97,7 @@ class UploadAction extends CAction
                         $is = preg_replace('/[^A-Z]/','',$in);
                         $in = preg_replace('/[^0-9\/]/','',$in);
                         $price = preg_replace('/[^0-9\/]/','',$price);
-
+                        
                         $check = WheelsTire::model()->findByAttributes(array(
                             'producer' => $producer->id,
                             'model' => $model,
@@ -106,12 +106,12 @@ class UploadAction extends CAction
                             'diameter' => $diameter
                         ));
                         if ($check && $_POST['collision'] == 1) {
-                            /*$check->saveAttributes([
+                            $check->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
-                            ]);*/
-                            echo "update $model<br />";
+                            ]);                           //echo "update $model<br />";
                         } else {
+                        
                             $export = ExportShiny::model()->findByAttributes(array(
                                 'model' => $model
                             ));
@@ -124,19 +124,18 @@ class UploadAction extends CAction
                                 'shape'     => $shape,
                                 'season'    => $s[$season],
                                 'price'     => $price,
-                                //'code'      => $article,
                                 'name'      => "$model $width/$shape R$diameter $in$is",
                                 'model'     => $model,
                                 'speed'     => $is,
-                                'studding'  => (in_array($studding,['Да','да'])) ? 1 : 2,
+                                'studding'  => in_array($studding,['Да','да']) ? 1 : 2,
                                 'img'       => $img,
                                 'producer'  => $producer->id,
                                 'raw_price' => $price,
                                 'in_index'  => $in,
                                 'rest'      => $count
                             ));
-                            //$tire->save();
-                            echo "new $model<br />";
+                            $tire->save();
+                            //echo "new $model<br />";
                         }
                     }
                     break;
