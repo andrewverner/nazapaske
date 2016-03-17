@@ -106,10 +106,11 @@ class UploadAction extends CAction
                             'diameter' => $diameter
                         ));
                         if ($check && $_POST['collision'] == 1) {
-                            $check->saveAttributes([
+                            /*$check->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
-                            ]);
+                            ]);*/
+                            echo "update $model<br />";
                         } else {
                             $export = ExportShiny::model()->findByAttributes(array(
                                 'model' => $model
@@ -134,7 +135,8 @@ class UploadAction extends CAction
                                 'in_index'  => $in,
                                 'rest'      => $count
                             ));
-                            $tire->save();
+                            //$tire->save();
+                            echo "new $model<br />";
                         }
                     }
                     break;
