@@ -109,7 +109,8 @@ class UploadAction extends CAction
                             $check->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
-                            ]);                           //echo "update $model<br />";
+                            ]);
+                            //echo "update $model<br />";
                         } else {
                         
                             $export = ExportShiny::model()->findByAttributes(array(
