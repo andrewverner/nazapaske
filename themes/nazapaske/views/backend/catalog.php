@@ -65,9 +65,7 @@
                         <?php echo CHtml::endForm(); ?>
                     </div>
                 </div>
-            </div>
-
-            <div role="tabpanel" class="tab-pane fade" id="update">
+                <br />
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Шины</h3>
