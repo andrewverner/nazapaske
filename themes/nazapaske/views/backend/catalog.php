@@ -100,7 +100,6 @@
                         <?php echo CHtml::fileField('file'); ?>
                         <div>Что делаем с пересекающимися моделями?</div>
                         <div><?php echo CHtml::radioButtonList('collision',0,[0 => 'Не трогаем', 1 => 'Обновляем']) ?></div>
-                        <div>Процент <?php echo CHtml::textField('percent',0); ?></div>
                         <?php echo CHtml::submitButton('Обновить'); ?>
                         <?php echo CHtml::endForm(); ?>
                     </div>
