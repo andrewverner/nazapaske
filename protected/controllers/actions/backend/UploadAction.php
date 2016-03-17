@@ -28,11 +28,11 @@ class UploadAction extends CAction
                         $dco = str_replace(',','.',$dco);
                         $price = preg_replace('/[^0-9\/]/','',$price);
 
-                        $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/Enkei/wtm_$name-$color.jpg";
-                        $img = (file_exists($file)) ? "/images/disk/Enkei/wtm_$name-$color.jpg" : null;
+                        $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/wtm_$name-$color.jpg";
+                        $img = (file_exists($file)) ? "/images/disk/$producer->name/wtm_$name-$color.jpg" : null;
                         if (!$img) {
-                            $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/Enkei/wtm_$name-$color.png";
-                            $img = (file_exists($file)) ? "/images/disk/Enkei/wtm_$name-$color.png" : null;
+                            $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/wtm_$name-$color.png";
+                            $img = (file_exists($file)) ? "/images/disk/$producer->name/wtm_$name-$color.png" : null;
                         }
 
                         $model = WheelsDisk::model()->findByAttributes([
@@ -46,15 +46,14 @@ class UploadAction extends CAction
                             'central_hole_diameter'     => $dco,
                         ]);
                         if ($model && $_POST['collision'] == 1) {
-                            /*$model->saveAttributes([
+                            $model->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
                                 'percent' => $_POST['percent']
-                            ]);*/
-                            echo "update {$producer->name} $name<br />";
+                            ]);
                         } else {
                             $model = new WheelsDisk();
-                            /*$model->setAttributes(array(
+                            $model->setAttributes(array(
                                 'width'                     => $width,
                                 'diameter'                  => $diameter,
                                 'mounting_holes'            => $pcd,
@@ -72,14 +71,74 @@ class UploadAction extends CAction
                                 'percent'                   => 0,
                                 'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? $name : null,
                             ));
-                            $model->save();*/
-                            "new {$producer->name} $name<br />";
+                            $model->save();
                         }
                     }
                     break;
-                case 'tire':
 
+                case 'tire':
+                    $s = [
+                        'Всесезонная'   => 1,
+                        'Летняя'        => 2,
+                        'Зимняя'        => 3,
+                    ];
+
+                    $rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
+                    foreach ($rows as $row) {
+                        list($producerName,$model,$width,$shape,$diameter,$in,$season,$type,$studding,$count,$price) = explode(';',$row);
+                        $producer = TireProducer::model()->findByAttributes(['name' => strtolower($producerName)]);
+                        if (!$producer) {
+                            $producer = new TireProducer();
+                            $producer->setAttributes(['name' => strtolower($producerName)]);
+                            $producer->save();
+                        }
+                        $model = trim(str_replace($producer->name,'',strtolower($model)));
+                        $diameter = (int)preg_replace('/[^0-9\/]/','',str_replace(',0','',$diameter));
+                        $is = preg_replace('/[^A-Z]/','',$in);
+                        $in = preg_replace('/[^0-9\/]/','',$in);
+                        $price = preg_replace('/[^0-9\/]/','',$price);
+
+                        $check = WheelsTire::model()->findByAttributes(array(
+                            'producer' => $producer->id,
+                            'model' => $model,
+                            'shape' => $shape,
+                            'width' => $width,
+                            'diameter' => $diameter
+                        ));
+                        if ($check && $_POST['collision'] == 1) {
+                            $check->saveAttributes([
+                                'price' => $price,
+                                'raw_price' => $price,
+                            ]);
+                        } else {
+                            $export = ExportShiny::model()->findByAttributes(array(
+                                'model' => $model
+                            ));
+                            $img = ($export != null) ? "/$export->goods_img" : null;
+
+                            $tire = new WheelsTire;
+                            $tire->setAttributes(array(
+                                'width'     => $width,
+                                'diameter'  => $diameter,
+                                'shape'     => $shape,
+                                'season'    => $s[$season],
+                                'price'     => $price,
+                                //'code'      => $article,
+                                'name'      => "$model $width/$shape R$diameter $in$is",
+                                'model'     => $model,
+                                'speed'     => $is,
+                                'studding'  => (in_array($studding,['Да','да'])) ? 1 : 2,
+                                'img'       => $img,
+                                'producer'  => $producer->id,
+                                'raw_price' => $price,
+                                'in_index'  => $in,
+                                'rest'      => $count
+                            ));
+                            $tire->save();
+                        }
+                    }
                     break;
+
                 default:
                     throw new CHttpException(404);
                     break;
