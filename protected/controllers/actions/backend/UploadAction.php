@@ -47,12 +47,12 @@ class UploadAction extends CAction
                             'central_hole_diameter'     => $dco,
                         ]);
                         if ($model && $_POST['collision'] == 1) {
-                            /*$model->saveAttributes([
+                            $model->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
                                 'percent' => $_POST['percent']
-                            ]);*/
-                            Helper::log("update model: $model",'log');
+                            ]);
+                            Helper::wlog("update model: {$producer->name} $name",'log');
                         } else {
                             $model = new WheelsDisk();
                             $model->setAttributes(array(
@@ -73,8 +73,8 @@ class UploadAction extends CAction
                                 'percent'                   => 0,
                                 'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? $name : null,
                             ));
-                            //$model->save();
-                            Helper::log("new model: $model",'log');
+                            $model->save();
+                            Helper::wlog("new model: {$producer->name} $name",'log');
                         }
                     }
                     break;
