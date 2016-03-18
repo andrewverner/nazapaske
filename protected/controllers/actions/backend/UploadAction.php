@@ -71,7 +71,7 @@ class UploadAction extends CAction
                                 'raw_price'                 => $price,
                                 'priority'                  => 0,
                                 'percent'                   => 0,
-                                'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? $name : null,
+                                'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? preg_replace('/[0-9\/]/','',substr($name,0,3)) : null,
                             ));
                             $model->save();
                             Helper::wlog("new model: {$producer->name} $name",'log');
