@@ -463,4 +463,9 @@ class UController extends Controller
         }
     }
 
+    public function actionT()
+    {
+        Helper::log(1,2);
+    }
+
 }

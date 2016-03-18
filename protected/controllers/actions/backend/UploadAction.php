@@ -11,6 +11,7 @@ class UploadAction extends CAction
 
     public function run($type)
     {
+        ini_set("max_execution_time",0);
         $time = time();
         if (move_uploaded_file($_FILES['file']['tmp_name'],"/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv")) {
             switch ($type) {
@@ -46,11 +47,11 @@ class UploadAction extends CAction
                             'central_hole_diameter'     => $dco,
                         ]);
                         if ($model && $_POST['collision'] == 1) {
-                            $model->saveAttributes([
+                            /*$model->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
                                 'percent' => $_POST['percent']
-                            ]);
+                            ]);*/
                         } else {
                             $model = new WheelsDisk();
                             $model->setAttributes(array(
@@ -71,7 +72,7 @@ class UploadAction extends CAction
                                 'percent'                   => 0,
                                 'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? $name : null,
                             ));
-                            $model->save();
+                            //$model->save();
                         }
                     }
                     break;
