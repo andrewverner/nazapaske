@@ -52,6 +52,7 @@ class UploadAction extends CAction
                                 'raw_price' => $price,
                                 'percent' => $_POST['percent']
                             ]);*/
+                            Helper::log("update model: $model",'log');
                         } else {
                             $model = new WheelsDisk();
                             $model->setAttributes(array(
@@ -73,6 +74,7 @@ class UploadAction extends CAction
                                 'model'                     => (in_array(strtolower($producer->name),['replay','replica'])) ? $name : null,
                             ));
                             //$model->save();
+                            Helper::log("new model: $model",'log');
                         }
                     }
                     break;
