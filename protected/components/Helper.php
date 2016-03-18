@@ -16,7 +16,8 @@ class Helper extends CComponent
 
     public static function log($data,$category)
     {
-        echo Yii::app()->basePath;
+        file_put_contents(Yii::app()->basePath."/runtime/log.log",date("Y-m-d H:i:s")." $data
+",FILE_APPEND);
     }
 
 }
