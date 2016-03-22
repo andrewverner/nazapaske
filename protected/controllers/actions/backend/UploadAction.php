@@ -80,7 +80,7 @@ class UploadAction extends CAction
                     break;
 
                 case 'tire':
-                    WheelsTire::model()->deleteAll();
+                    //WheelsTire::model()->deleteAll();
 
                     $s = [
                         'Всесезонная'   => 1,
