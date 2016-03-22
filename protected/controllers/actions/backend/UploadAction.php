@@ -80,6 +80,8 @@ class UploadAction extends CAction
                     break;
 
                 case 'tire':
+                    WheelsTire::model()->deleteAll();
+
                     $s = [
                         'Всесезонная'   => 1,
                         'Летняя'        => 2,
@@ -109,11 +111,11 @@ class UploadAction extends CAction
                             'diameter' => $diameter
                         ));
                         if ($check && $_POST['collision'] == 1) {
-                            /*$check->saveAttributes([
+                            $check->saveAttributes([
                                 'price' => $price,
                                 'raw_price' => $price,
-                            ]);*/
-                            echo "update $model<br />";
+                            ]);
+                            Helper::wlog("update $model",'log');
                         } else {
                         
                             $export = ExportShiny::model()->findByAttributes(array(
@@ -138,8 +140,8 @@ class UploadAction extends CAction
                                 'in_index'  => $in,
                                 'rest'      => $count
                             ));
-                            //$tire->save();
-                            echo "new $model<br />";
+                            $tire->save();
+                            Helper::wlog("new $model",'log');
                         }
                     }
                     break;
