@@ -101,8 +101,8 @@ class UController extends Controller
         $opts->x = 100;
         $opts->y = 100;
         $opts->stampType = WaterMarkOpts::STAMP_TYPE_IMAGE;
-        $opts->outputFilePath = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/Enkei';
-        $opts->sourceFilePath = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/Enkei';
+        $opts->outputFilePath = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/КиК';
+        $opts->sourceFilePath = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/КиК';
         $opts->outputType = WaterMarkOpts::OUTPUT_TYPE_JPG;
         $opts->stampFilePath = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images';
 
