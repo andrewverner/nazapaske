@@ -72,7 +72,7 @@ class WaterMark
         if (empty($this->_errors)) {
             if ($source = $this->_createImage("$opts->sourceFilePath/$opts->sourceFile")) {
                 list($fileName) = explode('.',basename("$opts->sourceFilePath/$opts->sourceFile"));
-                $fileName = trim($fileName);
+                $fileName = mb_convert_encoding($fileName,'UTF-8');
                 switch ($opts->stampType) {
                     case WaterMarkOpts::STAMP_TYPE_IMAGE:
                         $stamp = $this->_createImage("$opts->stampFilePath/$opts->stampFile");

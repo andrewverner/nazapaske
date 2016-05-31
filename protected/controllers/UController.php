@@ -111,7 +111,7 @@ class UController extends Controller
         foreach ($files as $file) {
             if ($file != '.' && $file != '..' && !file_exists("$path/wtm_$file") && !strstr($file,'wtm_')) {
                 list($name,$ext) = explode('.',basename($file));
-                echo "$name ".$this->_t($name)."<br />";
+                //echo "$name ".$this->_t($name)."<br />";
                 if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                     $opts->sourceFile = $file;
                     $opts->resultFilePrefix = 'wtm_';
