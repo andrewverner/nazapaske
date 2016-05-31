@@ -23,6 +23,7 @@ class UploadAction extends CAction
                     $rows = file("/var/www/andrewverner/data/www/w.andrewverner.ru/protected/prices/$type/$time.csv");
                     foreach ($rows as $row) {
                         list($name,$article,$width,$diameter,$pcd,$pcd2,$et,$dco,$color,$count,$price) = explode(';',$row);
+                        $name = trim(mb_convert_encoding($name,'UTF-8'));
 
                         $width = str_replace(',','.',$width);
                         $pcd2 = str_replace(',','.',$pcd2);
