@@ -24,6 +24,7 @@ class UploadAction extends CAction
                     foreach ($rows as $row) {
                         list($name,$article,$width,$diameter,$pcd,$pcd2,$et,$dco,$color,$count,$price) = explode(';',$row);
                         $name = trim(mb_convert_encoding($name, 'UTF-8', 'Windows-1251'));
+                        $color = trim(mb_convert_encoding($color, 'UTF-8', 'Windows-1251'));
 
                         $width = str_replace(',','.',$width);
                         $pcd2 = str_replace(',','.',$pcd2);
