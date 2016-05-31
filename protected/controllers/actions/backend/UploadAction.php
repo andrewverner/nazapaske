@@ -29,11 +29,11 @@ class UploadAction extends CAction
                         $dco = str_replace(',','.',$dco);
                         $price = preg_replace('/[^0-9\/]/','',$price);
 
-                        $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/wtm_$name - $color.jpg";
-                        $img = (file_exists($file)) ? "/images/disk/$producer->name/wtm_$name - $color.jpg" : null;
+                        $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/$name - $color.jpg";
+                        $img = (file_exists($file)) ? "/images/disk/$producer->name/$name - $color.jpg" : null;
                         if (!$img) {
-                            $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/wtm_$name - $color.png";
-                            $img = (file_exists($file)) ? "/images/disk/$producer->name/wtm_$name - $color.png" : null;
+                            $file = "/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/$producer->name/$name - $color.png";
+                            $img = (file_exists($file)) ? "/images/disk/$producer->name/$name - $color.png" : null;
                         }
 
                         $model = WheelsDisk::model()->findByAttributes([
