@@ -148,6 +148,14 @@ HTML;
                         ->html(true)
                         ->style()
                         ->send();
+                    $e->from('nazapaske@yandex.ru')
+                        ->to('nazapaske@mail.ru')
+                        //->to('andrewverner85@gmail.com')
+                        ->subject('Заказ с сайта')
+                        ->message($message)
+                        ->html(true)
+                        ->style()
+                        ->send();
                     Yii::app()->session->remove('disk');
                     Yii::app()->session->remove('tire');
                     $this->controller->render('thanks');
