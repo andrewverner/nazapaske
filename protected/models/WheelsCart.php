@@ -73,7 +73,7 @@ class WheelsCart extends CActiveRecord
 	{
 		return array(
 			'cartid' => 'Cartid',
-			'name' => 'Ваше имя',
+			'name' => 'ФИО',
 			'phone' => 'Ваш телефон',
 			'email' => 'Ваш email',
 			'delivery' => 'Delivery',
