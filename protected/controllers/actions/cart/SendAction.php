@@ -133,15 +133,15 @@ $tires
 <b>интернет-магазина NaZapaske.ru</b>
 HTML;
                     $e = Yii::app()->mailer;
-                    $e->from('nazapaske@mail.ru')
+                    $e->from('nazapaske@yandex.ru')
                         ->to($cart->email)
                         ->subject('Ваш заказ на Nazapaske.ru')
                         ->message($message)
                         ->html(true)
                         ->style()
                         ->send();
-                    $e->from('nazapaske@mail.ru')
-                        ->to('nazapaske@mail.ru')
+                    $e->from('nazapaske@yandex.ru')
+                        ->to('nazapaske@yandex.ru')
                         //->to('andrewverner85@gmail.com')
                         ->subject('Заказ с сайта')
                         ->message($message)

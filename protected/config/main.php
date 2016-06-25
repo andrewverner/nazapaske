@@ -53,10 +53,6 @@ return array(
             'class' => 'application.components.BreadCrumbs',
         ),
 
-		'yiimailer' => array(
-			'class' => 'application.extensions.yiimailer.YiiMailer'
-		),
-
 		// uncomment the following to enable URLs in path-format
 
 		'urlManager'=>array(

@@ -465,14 +465,15 @@ class UController extends Controller
 
     public function actionT()
     {
-        error_reporting(E_ALL);
-        $mail = Yii::app()->yiimailer;
-        //$mail->clearLayout();//if layout is already set in config
-        $mail->setFrom('from@example.com', 'John Doe');
-        $mail->setTo(Yii::app()->params['adminEmail']);
-        $mail->setSubject('Mail subject');
-        $mail->setBody('Simple message');
-        var_dump($mail->send());
+	error_reporting(E_ALL);
+        $e = Yii::app()->mailer;
+                    var_dump($e->from('andrewverner@yandex.ru')
+                        ->to('andrewverner85@gmail.com')
+                        ->subject('Ваш заказ на Nazapaske.ru')
+                        ->message('test<br />message')
+                        ->html(true)
+                        ->style()
+                        ->send());
     }
 
 }
