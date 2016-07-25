@@ -486,6 +486,10 @@ class UController extends Controller
             $fileName = "$model->name - $model->color.png";
             echo $fileName;
             echo (file_exists("{$path}/{$fileName}")) ? " exists<br />" : " doesn't exists<br />";
+            if (file_exists("{$path}/{$fileName}")) {
+                $model->img = "/images/disk/КиК/{$fileName}";
+                $model->save(false);
+            }
         }
     }
 
