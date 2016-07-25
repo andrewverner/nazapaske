@@ -481,7 +481,10 @@ class UController extends Controller
         $models = WheelsDisk::model()->findAllByAttributes(['producer' => 12]);
         if (!$models) die();
         foreach ($models as $model) {
-            echo "$model->name<br />";
+            $path = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/КиК';
+            $fileName = "$model->name - $model->color.png";
+            echo $fileName;
+            echo (file_exists("{$path}/{$fileName}")) ? " exists<br />" : " doesn't exists<br />";
         }
     }
 
