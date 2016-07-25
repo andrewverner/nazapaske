@@ -476,4 +476,13 @@ class UController extends Controller
                         ->send());
     }
 
+    public function actionKik()
+    {
+        $models = WheelsDisk::model()->findAllByAttributes(['producer' => 12]);
+        if (!$models) die();
+        foreach ($models as $model) {
+            echo "$model->name<br />";
+        }
+    }
+
 }
