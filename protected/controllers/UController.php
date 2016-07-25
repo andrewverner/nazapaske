@@ -482,6 +482,7 @@ class UController extends Controller
         if (!$models) die();
         foreach ($models as $model) {
             $path = '/var/www/andrewverner/data/www/wheels.andrewverner.ru/wheels/images/disk/КиК';
+            $model->name = trim(str_replace('KиK ','',$model->name));
             $fileName = "$model->name - $model->color.png";
             echo $fileName;
             echo (file_exists("{$path}/{$fileName}")) ? " exists<br />" : " doesn't exists<br />";
