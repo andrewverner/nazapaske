@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://credit-cart.su/services/easycredit/inc.js"></script>
+<script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
 <div class="breadcrumbs">
     <?php
     $bread = ($model->producer == 2) ? array(
