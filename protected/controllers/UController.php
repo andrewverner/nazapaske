@@ -339,6 +339,7 @@ class UController extends Controller
                     $model->producer = $producer->id;
                     $model->in_index = $item->load_index;
                     $model->rest = $item->count;
+                    $model->img = $item->foto;
                     $model->save(false);
                 }
             }
