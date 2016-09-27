@@ -232,7 +232,7 @@ class WheelsTire extends CActiveRecord
         );
         $model = $this->find($cr);
         if ($model) {
-            return (strstr($model->img,'photo.yst.ru')) ? "http://{$model->img}" : $model->img;
+            return (strstr($model->img,'photo.yst.ru')) ? "http://{$model->img}" : "http://nazapaske.ru{$model->img}";
         }
         else
             return '/images/no-image.png';
