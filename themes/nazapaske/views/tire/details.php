@@ -15,7 +15,7 @@
     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-rounded img-thumbnail">
-                <?php echo CHtml::link(CHtml::image("http://nazapaske.ru/$model->img"),"http://nazapaske.ru/$model->img",array("data-lightbox"=>"tire")); ?>
+                <?php echo CHtml::link(CHtml::image($model->image()),$model->image(),array("data-lightbox"=>"tire")); ?>
             </div>
             <?php $images = $model->images(); ?>
             <?php if ($images != null) { ?>
@@ -95,7 +95,7 @@
                             <tr>
                                 <td>
                                     <div class="img-rounded img-thumbnail">
-                                        <?php echo CHtml::link(CHtml::image("http://nazapaske.ru/$tire->img"),"http://nazapaske.ru/$tire->img",array("data-lightbox"=>"disk-$tire->tireid")); ?>
+                                        <?php echo CHtml::link(CHtml::image($tire->image(),$tire->image(),array("data-lightbox"=>"disk-$tire->tireid")); ?>
                                     </div>
                                 </td>
                                 <td><?php echo $tire->width; ?>/<?php echo $tire->shape; ?></td>
