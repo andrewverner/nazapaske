@@ -95,7 +95,7 @@
                             <tr>
                                 <td>
                                     <div class="img-rounded img-thumbnail">
-                                        <?php echo CHtml::link(CHtml::image("http://nazapaske.ru/$tire->img"),"http://nazapaske.ru/$tire->img",array("data-lightbox"=>"disk-$tire->tireid")); ?>
+                                        <?php echo CHtml::link(CHtml::image($model->image()),$model->image(),array("data-lightbox"=>"disk-$tire->tireid")); ?>
                                     </div>
                                 </td>
                                 <td><?php echo $tire->width; ?>/<?php echo $tire->shape; ?></td>
