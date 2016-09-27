@@ -14,7 +14,7 @@ $studding = (isset($_REQUEST["studding"]) && $_REQUEST["studding"] != '') ? $_RE
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mini">
             <div class="mini-details">
                 <div class="img-rounded img-thumbnail">
-                    <img src="http://nazapaske.ru<?php echo $model->image(); ?>" alt="<?php echo $model->model ?>" /><br />
+                    <img src="<?php echo $model->image(); ?>" alt="<?php echo $model->model ?>" /><br />
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 model-name"><?php echo $model->getProducerName() ?> <?php echo $model->model ?></div>
