@@ -231,7 +231,12 @@ class WheelsTire extends CActiveRecord
             ':nophoto' => '%nophoto%'
         );
         $model = $this->find($cr);
-        return ($model != null) ? $model->img : '/images/no-image.png';
+        if ($model) {
+            return (strstr($model->img,'photo.yst.ru')) ? "http://{$model->img}" : $model->img;
+        }
+        else
+            return '/images/no-image.png';
+        //return ($model != null) ? $model->img : '/images/no-image.png';
     }
 
     public function getInterval($field)
