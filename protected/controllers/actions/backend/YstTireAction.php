@@ -14,6 +14,9 @@ class YstTireAction extends CAction
         if (Yii::app()->user->isGuest || !Yii::app()->user->isAdmin) throw new CHttpException(403); else {
             $xml = simplexml_load_string(file_get_contents("http://www.yst.ru/data/tyre_kr_opt.xml"));
             foreach ($xml as $item) {
+            
+        	if ($item->count >= 4) {
+            
                 $producer = TireProducer::model()->findByAttributes(['name' => strtolower($item->brand)]);
                 if ($producer == null) {
                     $producer = new TireProducer();
@@ -58,6 +61,9 @@ class YstTireAction extends CAction
                     $model->rest = 4;
                     $model->save(false);
                 }
+                
+                }
+                
             }
         }
     }

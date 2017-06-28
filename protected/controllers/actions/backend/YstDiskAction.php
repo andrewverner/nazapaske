@@ -14,7 +14,7 @@ class YstDiskAction extends CAction
         if (Yii::app()->user->isGuest || !Yii::app()->user->isAdmin) throw new CHttpException(403); else {
             $xml = simplexml_load_string(file_get_contents("http://www.yst.ru/data/disk_base.xml"));
             foreach ($xml->gd as $disk) {
-                if ($disk->price_recommend && in_array($disk->brand,array('ALCASTA','CROSS STREET','NZ','REPLICA','TREBL','X-RACE','YOKATTA','YST')) && trim($disk->foto)) {
+                if ($disk->count >= 4 &&  $disk->price_recommend && in_array($disk->brand,array('ALCASTA','CROSS STREET','NZ','REPLICA','TREBL','X-RACE','YOKATTA','YST','HARP')) && trim($disk->foto)) {
                     $producer = DiskProducer::model()->findByAttributes(array('name' => $disk->brand));
                     if ($producer == null) {
                         $producer = new DiskProducer;

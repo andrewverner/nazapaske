@@ -45,9 +45,10 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 glyph glyph-phone">
                 <strong>Позвоните нам</strong><br />
-                <span class="big">8 (800) 550-76-10</span><br />
-                <span class="small">* звонок по России бесплатный</span><br />
-                <span class="small">+7 (863)</span> <span class="big">275-76-10</span>
+              <!--   <a href="tel:88005507610" style="color:#333;"> <span class="big">8 (800) 550-76-10</span></a><br />
+                <span class="small">* звонок по России бесплатный</span><br />  <span class="small"></span>-->
+               <a href="tel:+79281447610" style="color:#333;"> +7 (928) <span class="big">144-76-10</span> </a>
+				
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 glyph glyph-cart">
                 <strong>Корзина</strong><br />
